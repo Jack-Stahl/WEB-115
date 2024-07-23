@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB-115 Final Project</title>
+    <script src="projectJS.js" defer></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #bannerimage {
+            width: 100%;
+            height: 311.5px;
+            background-image: url("Fitness Banner.png");
+            background-position: center;
+            background-size: contain;
+            background-color: black;
+            background-repeat: no-repeat;
+        }
+        body {
+            background-color: #22232b; 
+            color: #fff; 
+            font-family: Arial, sans-serif; 
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+        }
+        .day {
+            text-align: center;
+            font-size: x-large;
+            width: 200px;
+        }
+        .meal, .snack {
+            margin: 5px 0;
+            padding: 10px;
+            font-size: medium;
+            color: #fff;
+            border: 1px solid #fff; 
+            border-radius: 5px; 
+            background-color: rgba(255, 255, 255, 0.1); 
+        }
+        h5 {
+            margin: 20px 0;
+        }
+        .button {
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            background-color: #19142b;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+        .form-container {
+            text-align: center;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="bannerimage"></div>
+
+    <div class="container">
+        <div id="Sunday" class="day">
+            <h2>Sunday</h2>
+            <h5>Breakfast</h5>
+            <input type="text" class="meal" id="sunday-breakfast" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="sunday-snack1" value="">
+            <h5>Lunch</h5>
+            <input type="text" class="meal" id="sunday-lunch" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="sunday-snack2" value="">
+            <h5>Dinner</h5>
+            <input type="text" class="meal" id="sunday-dinner" value="">
+        </div>
+        <div id="Monday" class="day">
+            <h2>Monday</h2>
+            <h5>Breakfast</h5>
+            <input type="text" class="meal" id="monday-breakfast" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="monday-snack1" value="">
+            <h5>Lunch</h5>
+            <input type="text" class="meal" id="monday-lunch" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="monday-snack2" value="">
+            <h5>Dinner</h5>
+            <input type="text" class="meal" id="monday-dinner" value="">
+        </div>
+        <div id="Tuesday" class="day">
+            <h2>Tuesday</h2>
+            <h5>Breakfast</h5>
+            <input type="text" class="meal" id="tuesday-breakfast" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="tuesday-snack1" value="">
+            <h5>Lunch</h5>
+            <input type="text" class="meal" id="tuesday-lunch" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="tuesday-snack2" value="">
+            <h5>Dinner</h5>
+            <input type="text" class="meal" id="tuesday-dinner" value="">
+        </div>
+        <div id="Wednesday" class="day">
+            <h2>Wednesday</h2>
+            <h5>Breakfast</h5>
+            <input type="text" class="meal" id="wednesday-breakfast" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="wednesday-snack1" value="">
+            <h5>Lunch</h5>
+            <input type="text" class="meal" id="wednesday-lunch" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="wednesday-snack2" value="">
+            <h5>Dinner</h5>
+            <input type="text" class="meal" id="wednesday-dinner" value="">
+        </div>
+        <div id="Thursday" class="day">
+            <h2>Thursday</h2>
+            <h5>Breakfast</h5>
+            <input type="text" class="meal" id="thursday-breakfast" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="thursday-snack1" value="">
+            <h5>Lunch</h5>
+            <input type="text" class="meal" id="thursday-lunch" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="thursday-snack2" value="">
+            <h5>Dinner</h5>
+            <input type="text" class="meal" id="thursday-dinner" value="">
+        </div>
+        <div id="Friday" class="day">
+            <h2>Friday</h2>
+            <h5>Breakfast</h5>
+            <input type="text" class="meal" id="friday-breakfast" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="friday-snack1" value="">
+            <h5>Lunch</h5>
+            <input type="text" class="meal" id="friday-lunch" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="friday-snack2" value="">
+            <h5>Dinner</h5>
+            <input type="text" class="meal" id="friday-dinner" value="">
+        </div>
+        <div id="Saturday" class="day">
+            <h2>Saturday</h2>
+            <h5>Breakfast</h5>
+            <input type="text" class="meal" id="saturday-breakfast" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="saturday-snack1" value="">
+            <h5>Lunch</h5>
+            <input type="text" class="meal" id="saturday-lunch" value="">
+            <h5>Snack</h5>
+            <input type="text" class="snack" id="saturday-snack2" value="">
+            <h5>Dinner</h5>
+            <input type="text" class="meal" id="saturday-dinner" value="">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <input type="button" id="ClearButton" value="Clear" class="button">
+    </div>
+
+    <div class="form-container">
+        <form id="myForm">
+            <div class="form-container">
+                <label for="userName" class="day">Your Name:</label>
+                <input type="text" id="Name" name="Name"  class="meal">
+        
+                <label for="weeklyGoal" class="day">Weekly Goal:</label>
+                <textarea id="weeklyGoal" name="weeklyGoal" class="meal" ></textarea>
+            </div>
+            <label for="email" class="day">Email:</label>
+            <input type="email" id="email" name="email" class="meal" required>
+            <button id="FormButton" type="submit" class="button">Generate Meal Plan</button>
+        </form>
+    </div>
+</body>
+</html>
